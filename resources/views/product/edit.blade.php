@@ -154,7 +154,7 @@
                                         <div class="col-md-4">
                                                 <label>{{trans('file.Sale Unit')}}</strong> </label>
                                                 <div class="input-group">
-                                                  <select class="form-control selectpicker" name="sale_unit_id" id="sale-unit"> 
+                                                  <select class="form-control selectpicker" name="sale_unit_id" id="sale-unit">
                                                   </select>
                                                   <input type="hidden" name="sale_unit" value="{{ $lims_product_data->sale_unit_id}}">
                                               </div>
@@ -163,13 +163,13 @@
                                                 <div class="form-group">
                                                     <label>{{trans('file.Purchase Unit')}}</strong> </label>
                                                     <div class="input-group">
-                                                      <select class="form-control selectpicker" name="purchase_unit_id"> 
+                                                      <select class="form-control selectpicker" name="purchase_unit_id">
                                                       </select>
                                                       <input type="hidden" name="purchase_unit" value="{{ $lims_product_data->purchase_unit_id}}">
                                                   </div>
                                                 </div>
-                                        </div>                                
-                                    </div>                                
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="cost" class="col-md-4">
                                     <div class="form-group">
@@ -186,6 +186,13 @@
                                     </div>
                                     <div class="form-group">
                                         <input type="hidden" name="qty" value="{{ $lims_product_data->qty }}" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>{{trans('Product Expiry Date')}} </strong> </label>
+                                        <input type="date" name="expiry_date" class="form-control" value="{{ $lims_product_data->expiry_date }}">
+                                        <span class="validation-msg"></span>
                                     </div>
                                 </div>
                                 <div id="alert-qty" class="col-md-4">
@@ -259,7 +266,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-md-12"> 
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label>{{trans('file.Product Details')}}</label>
                                         <textarea name="product_details" class="form-control" rows="5">{{str_replace('@', '"', $lims_product_data->product_details)}}</textarea>
@@ -310,7 +317,7 @@
                                     <input name="promotion" type="checkbox" id="promotion" value="1">&nbsp;
                                     <label><h5>{{trans('file.Add Promotional Price')}}</h5></label>
                                 </div>
-                                
+
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-4" id="promotion_price">   <label>{{trans('file.Promotional Price')}}</label>
@@ -475,10 +482,10 @@
         unitID = $(this).val();
         if(unitID) {
             populate_unit_second(unitID);
-        }else{    
+        }else{
             $('select[name="sale_unit_id"]').empty();
             $('select[name="purchase_unit_id"]').empty();
-        }                        
+        }
     });
 
     var lims_product_code = [ @foreach($lims_product_list as $product)
@@ -647,7 +654,7 @@
             $("#promotion_price").show();
             $("#start_date").show();
             $("#last_date").show();
-        } 
+        }
         else {
             $("#promotion_price").hide();
             $("#start_date").hide();
@@ -740,7 +747,7 @@
         stop: function () {
           var queue = myDropzone.getAcceptedFiles();
           newQueue = [];
-          $('#imageUpload .dz-preview .dz-filename [data-dz-name]').each(function (count, el) {           
+          $('#imageUpload .dz-preview .dz-filename [data-dz-name]').each(function (count, el) {
                 var name = el.innerHTML;
                 queue.forEach(function(file) {
                     if (file.name === name) {
@@ -786,11 +793,11 @@
                             url:'../update',
                             data: $("#product-form").serialize(),
                             success:function(response){
-                                //console.log(response);
+                                // console.log(response);
                                 location.href = '../';
                             },
                             error:function(response) {
-                                //console.log(response);
+                                // console.log(response);
                               if(response.responseJSON.errors.name) {
                                   $("#name-error").text(response.responseJSON.errors.name);
                               }

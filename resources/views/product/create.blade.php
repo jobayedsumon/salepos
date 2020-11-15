@@ -66,7 +66,7 @@
                                             <input type="file" name="file" class="form-control">
                                         </div>
                                         <span class="validation-msg"></span>
-                                    </div>                                
+                                    </div>
                                 </div>
                                 <div id="combo" class="col-md-9 mb-1">
                                     <label>{{trans('file.add_product')}}</label>
@@ -134,7 +134,7 @@
                                         <div class="col-md-4">
                                                 <label>{{trans('file.Sale Unit')}}</strong> </label>
                                                 <div class="input-group">
-                                                  <select class="form-control selectpicker" name="sale_unit_id"> 
+                                                  <select class="form-control selectpicker" name="sale_unit_id">
                                                   </select>
                                               </div>
                                         </div>
@@ -142,12 +142,12 @@
                                                 <div class="form-group">
                                                     <label>{{trans('file.Purchase Unit')}}</strong> </label>
                                                     <div class="input-group">
-                                                      <select class="form-control selectpicker" name="purchase_unit_id"> 
+                                                      <select class="form-control selectpicker" name="purchase_unit_id">
                                                       </select>
                                                   </div>
                                                 </div>
-                                        </div>                                
-                                    </div>                                
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="cost" class="col-md-4">
                                      <div class="form-group">
@@ -166,6 +166,13 @@
                                         <input type="hidden" name="qty" value="0.00">
                                     </div>
                                 </div>
+{{--                                <div class="col-md-4">--}}
+{{--                                    <div class="form-group">--}}
+{{--                                        <label>{{trans('Product Expiry Date')}} </strong> </label>--}}
+{{--                                        <input type="datetime-local" name="expiry_date" class="form-control">--}}
+{{--                                        <span class="validation-msg"></span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <div id="alert-qty" class="col-md-4">
                                     <div class="form-group">
                                         <label>{{trans('file.Alert Quantity')}}</strong> </label>
@@ -197,15 +204,15 @@
                                         <input type="checkbox" name="featured" value="1">&nbsp;
                                         <label>{{trans('file.Featured')}}</label>
                                         <p class="italic">{{trans('file.Featured product will be displayed in POS')}}</p>
-                                    </div> 
-                                </div>                             
+                                    </div>
+                                </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>{{trans('file.Product Image')}}</strong> </label> <i class="dripicons-question" data-toggle="tooltip" title="{{trans('file.You can upload multiple image. Only .jpeg, .jpg, .png, .gif file can be uploaded. First image will be base image.')}}"></i>
                                         <div id="imageUpload" class="dropzone"></div>
                                         <span class="validation-msg" id="image-error"></span>
                                     </div>
-                                </div>                            
+                                </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>{{trans('file.Product Details')}}</label>
@@ -267,8 +274,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>  
-                                </div> 
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <input type="button" value="{{trans('file.submit')}}" id="submit-btn" class="btn btn-primary">
@@ -294,7 +301,7 @@
     $("#start_date").hide();
     $("#last_date").hide();
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
 
     $.ajaxSetup({
         headers: {
@@ -308,7 +315,7 @@
       });
     });
 
-    
+
 
     tinymce.init({
       selector: 'textarea',
@@ -358,14 +365,14 @@
     });
 
     $('select[name="unit_id"]').on('change', function() {
-        
+
         unitID = $(this).val();
         if(unitID) {
             populate_category(unitID);
-        }else{    
+        }else{
             $('select[name="sale_unit_id"]').empty();
             $('select[name="purchase_unit_id"]').empty();
-        }                        
+        }
     });
     <?php $productArray = []; ?>
     var lims_product_code = [ @foreach($lims_product_list as $product)
@@ -507,7 +514,7 @@
             $("#promotion_price").show(300);
             $("#start_date").show(300);
             $("#last_date").show(300);
-        } 
+        }
         else {
             $("#promotion_price").hide(300);
             $("#start_date").hide(300);
@@ -627,7 +634,7 @@
         stop: function () {
           var queue = myDropzone.getAcceptedFiles();
           newQueue = [];
-          $('#imageUpload .dz-preview .dz-filename [data-dz-name]').each(function (count, el) {           
+          $('#imageUpload .dz-preview .dz-filename [data-dz-name]').each(function (count, el) {
                 var name = el.innerHTML;
                 queue.forEach(function(file) {
                     if (file.name === name) {
