@@ -229,13 +229,13 @@
                   @endif
 
                   @if($gift_card_permission_active)
-                  <li id="gift-card-menu"><a href="{{route('gift_cards.index')}}">{{trans('file.Gift Card List')}}</a> </li>
+{{--                  <li id="gift-card-menu"><a href="{{route('gift_cards.index')}}">{{trans('file.Gift Card List')}}</a> </li>--}}
                   @endif
                   @if($coupon_permission_active)
-                  <li id="coupon-menu"><a href="{{route('coupons.index')}}">{{trans('file.Coupon List')}}</a> </li>
+{{--                  <li id="coupon-menu"><a href="{{route('coupons.index')}}">{{trans('file.Coupon List')}}</a> </li>--}}
                   @endif
                   @if($delivery_permission_active)
-                  <li id="delivery-menu"><a href="{{route('delivery.index')}}">{{trans('file.Delivery List')}}</a></li>
+{{--                  <li id="delivery-menu"><a href="{{route('delivery.index')}}">{{trans('file.Delivery List')}}</a></li>--}}
                   @endif
                 </ul>
               </li>
@@ -698,6 +698,9 @@
                     <a href="{{route('report.qtyAlert')}}">{{trans('file.Product Quantity Alert')}}</a>
                   </li>
                   @endif
+                      <li id="exprAlert-report-menu">
+                          <a href="{{route('report.exprAlert')}}">{{trans('Product Expiry Alert')}}</a>
+                      </li>
                   @if($user_report_active)
                   <li id="user-report-menu">
                     <a id="user-report-link" href="">{{trans('file.User Report')}}</a>
@@ -878,13 +881,18 @@
                 @if(\Auth::user()->role_id <= 2)
                   <li class="nav-item"><a href="{{route('cashRegister.index')}}" title="{{trans('file.Cash Register List')}}"><i class="dripicons-archive"></i></a></li>
                 @endif
-                @if(($alert_product + count(\Auth::user()->unreadNotifications)) > 0)
+                @if(($alert_product + count(\Auth::user()->unreadNotifications) + $alert_expired_product) > 0)
                 <li class="nav-item" id="notification-icon">
-                      <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item"><i class="dripicons-bell"></i><span class="badge badge-danger notification-number">{{$alert_product + count(\Auth::user()->unreadNotifications)}}</span>
+                      <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item">
+                          <i class="dripicons-bell"></i><span class="badge badge-danger notification-number">
+                              {{$alert_product + count(\Auth::user()->unreadNotifications) + $alert_expired_product}}</span>
                       </a>
                       <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default notifications" user="menu">
                           <li class="notifications">
                             <a href="{{route('report.qtyAlert')}}" class="btn btn-link"> {{$alert_product}} product exceeds alert quantity</a>
+                          </li>
+                          <li class="notifications">
+                              <a href="{{route('report.exprAlert')}}" class="btn btn-link"> {{$alert_expired_product}} product expiring soon</a>
                           </li>
                           @foreach(\Auth::user()->unreadNotifications as $key => $notification)
                               <li class="notifications">
@@ -959,13 +967,13 @@
                       <li>
                         <a href="{{url('my-transactions/'.date('Y').'/'.date('m'))}}"><i class="dripicons-swap"></i> {{trans('file.My Transaction')}}</a>
                       </li>
-                      <li>
-                        <a href="{{url('holidays/my-holiday/'.date('Y').'/'.date('m'))}}"><i class="dripicons-vibrate"></i> {{trans('file.My Holiday')}}</a>
-                      </li>
+{{--                      <li>--}}
+{{--                        <a href="{{url('holidays/my-holiday/'.date('Y').'/'.date('m'))}}"><i class="dripicons-vibrate"></i> {{trans('file.My Holiday')}}</a>--}}
+{{--                      </li>--}}
                       @if($empty_database_permission_active)
-                      <li>
-                        <a onclick="return confirm('Are you sure want to delete? If you do this all of your data will be lost.')" href="{{route('setting.emptyDatabase')}}"><i class="dripicons-stack"></i> {{trans('file.Empty Database')}}</a>
-                      </li>
+{{--                      <li>--}}
+{{--                        <a onclick="return confirm('Are you sure want to delete? If you do this all of your data will be lost.')" href="{{route('setting.emptyDatabase')}}"><i class="dripicons-stack"></i> {{trans('file.Empty Database')}}</a>--}}
+{{--                      </li>--}}
                       @endif
                       <li>
                         <a href="{{ route('logout') }}"

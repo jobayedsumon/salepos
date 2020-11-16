@@ -68,7 +68,7 @@ Route::group(['middleware' => ['auth', 'active']], function() {
 	Route::post('importproduct', 'ProductController@importProduct')->name('product.import');
 	Route::post('exportproduct', 'ProductController@exportProduct')->name('product.export');
 	Route::get('products/print_barcode','ProductController@printBarcode')->name('product.printBarcode');
-	
+
 	Route::get('products/lims_product_search', 'ProductController@limsProductSearch')->name('product.search');
 	Route::post('products/deletebyselection', 'ProductController@deleteBySelection');
 	Route::post('products/update', 'ProductController@updateProduct');
@@ -182,6 +182,7 @@ Route::group(['middleware' => ['auth', 'active']], function() {
 	Route::resource('return-purchase', 'ReturnPurchaseController');
 
 	Route::get('report/product_quantity_alert', 'ReportController@productQuantityAlert')->name('report.qtyAlert');
+	Route::get('report/product_expiry_alert', 'ReportController@productExpiryAlert')->name('report.exprAlert');
 	Route::get('report/warehouse_stock', 'ReportController@warehouseStock')->name('report.warehouseStock');
 	Route::post('report/warehouse_stock', 'ReportController@warehouseStockById')->name('report.warehouseStock');
 	Route::get('report/daily_sale/{year}/{month}', 'ReportController@dailySale');
