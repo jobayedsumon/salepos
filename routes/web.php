@@ -38,6 +38,8 @@ Route::group(['middleware' => ['auth', 'active']], function() {
 	Route::post('category/category-data', 'CategoryController@categoryData');
 	Route::resource('category', 'CategoryController');
 
+	Route::resource('slider', 'SliderController');
+
 	Route::post('importbrand', 'BrandController@importBrand')->name('brand.import');
 	Route::post('brand/deletebyselection', 'BrandController@deleteBySelection');
 	Route::get('brand/lims_brand_search', 'BrandController@limsBrandSearch')->name('brand.search');

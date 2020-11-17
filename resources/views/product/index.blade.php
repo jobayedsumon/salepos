@@ -434,12 +434,12 @@
                             if(product_id.length && confirmDelete()) {
                                 $.ajax({
                                     type:'POST',
-                                    url:'products/deletebyselection',
+                                    url:'/products/deletebyselection',
                                     data:{
                                         productIdArray: product_id
                                     },
                                     success:function(data){
-                                        dt.rows({ page: 'current', selected: true }).deselect();
+
                                         dt.rows({ page: 'current', selected: true }).remove().draw(false);
                                     }
                                 });

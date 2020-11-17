@@ -1,10 +1,10 @@
 @extends('layout.main')
 @section('content')
 @if(session()->has('message'))
-  <div class="alert alert-success alert-dismissible text-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>{{ session()->get('message') }}</div> 
+  <div class="alert alert-success alert-dismissible text-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>{{ session()->get('message') }}</div>
 @endif
 @if(session()->has('not_permitted'))
-  <div class="alert alert-danger alert-dismissible text-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>{{ session()->get('not_permitted') }}</div> 
+  <div class="alert alert-danger alert-dismissible text-center"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>{{ session()->get('not_permitted') }}</div>
 @endif
 
 <section>
@@ -25,7 +25,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($lims_adjustment_all as $key=>$adjustment)
+                @forelse($lims_adjustment_all as $key=>$adjustment)
                 <tr data-id="{{$adjustment->id}}">
                     <td>{{$key}}</td>
                     <td>{{ date('d-m-Y', strtotime($adjustment->created_at->toDateString())) . ' '. $adjustment->created_at->toTimeString() }}</td>
@@ -40,17 +40,18 @@
                     	 	if($key)
                     	 		echo '<br>';
                     	 	echo $product->name;
-                    	 } 
+                    	 }
                     ?>
                     </td>
                     <td>{{$adjustment->note}}</td>
                     <td>
+
                         <div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{trans('file.action')}}<span class="caret"></span><span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
                                 <li>
-                                    <a href="{{ route('qty_adjustment.edit', ['id' => $adjustment->id]) }}" class="btn btn-link"><i class="dripicons-document-edit"></i> {{trans('file.edit')}}</a> 
+                                    <a href="{{ route('qty_adjustment.edit', $adjustment->id) }}" class="btn btn-link"><i class="dripicons-document-edit"></i> {{trans('file.edit')}}</a>
                                 </li>
                                 <li class="divider"></li>
                                 {{ Form::open(['route' => ['qty_adjustment.destroy', $adjustment->id], 'method' => 'DELETE'] ) }}
@@ -62,7 +63,8 @@
                         </div>
                     </td>
                 </tr>
-                @endforeach
+                @empty
+                @endforelse
             </tbody>
         </table>
     </div>

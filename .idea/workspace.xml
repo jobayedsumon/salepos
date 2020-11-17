@@ -22,20 +22,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Expiry date added">
-      <change afterPath="$PROJECT_DIR$/public/public/images/brand/20201116123152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/brand/20201116123244.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/brand/20201116123338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stock_count/20201116-050321.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/report/expr_alert_report.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/Dy7gqR4EWLiYZjrgiaymOf9Wunfsm3aMs4raacGL" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Notification added">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_17_154231_create_sliders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115216.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115306.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115446.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117121412.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117121447.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/160559389338081GsS1XFEZL._AC_SX522_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605593989936dairy2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594066064products_2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594130919snacksofourlives.0.0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594186770snacksofourlives.0.0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605598066652VUFNKV7ORECPWC3S6TSUM6M7WM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/slider/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/GzL3OEZQ18zdhEtFVZ3GV8xJfncbzGQtr8qn004O" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adjustment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adjustment/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/purchase/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/purchase/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/RPJTuUwz4gCieK8xTjYus2ohQdlPf54uDSy4ifnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Dy7gqR4EWLiYZjrgiaymOf9Wunfsm3aMs4raacGL" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +212,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/report" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -237,7 +248,10 @@
       <workItem from="1605418075707" duration="4898000" />
       <workItem from="1605440769042" duration="2731000" />
       <workItem from="1605505592452" duration="136000" />
-      <workItem from="1605507355756" duration="8004000" />
+      <workItem from="1605507355756" duration="8214000" />
+      <workItem from="1605590183225" duration="1911000" />
+      <workItem from="1605606023532" duration="1932000" />
+      <workItem from="1605616259355" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -246,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605443431241</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Notification added">
+      <created>1605528709334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605528709335</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,13 +288,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Expiry date added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expiry date added" />
+    <MESSAGE value="Notification added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notification added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605519235364">
+    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605519235364" />
+    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605606321790" />
     <state x="466" y="366" key="ComposerInitDialogKey" timestamp="1605347886252">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -282,10 +304,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605512810007" />
-    <state x="320" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605443438179">
+    <state x="320" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605528713141">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605443438179" />
+    <state x="320" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605528713141" />
     <state x="420" y="189" width="600" height="522" key="find.popup" timestamp="1605519993610">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -294,10 +316,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605513028871" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605528065579">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605610089931">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605528065579" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605610089931" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
 </project>

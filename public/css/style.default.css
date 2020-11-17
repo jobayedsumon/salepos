@@ -249,7 +249,7 @@ nav.navbar .dropdown-menu {
     border: none;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     width: auto;
-    right: auto;
+    right: 0;
     left: auto;
     float: left;
     margin-top: 0;
@@ -1483,8 +1483,8 @@ STYLE SWITCHER FOR DEMO
     color: #495057;
 }
 
-/* ========================================= 
-   THEMING OF BOOTSTRAP COMPONENTS           
+/* =========================================
+   THEMING OF BOOTSTRAP COMPONENTS
    ========================================= */
 /*
  * 1. NAVBAR
@@ -2188,7 +2188,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 /*
- * 3. TYPE  
+ * 3. TYPE
  */
 body {
     font-family: "Nunito", sans-serif;

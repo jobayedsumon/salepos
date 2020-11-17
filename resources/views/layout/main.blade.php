@@ -885,7 +885,7 @@
                 <li class="nav-item" id="notification-icon">
                       <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item">
                           <i class="dripicons-bell"></i><span class="badge badge-danger notification-number">
-                              {{$alert_product + count(\Auth::user()->unreadNotifications) + $alert_expired_product}}</span>
+                              {!! $alert_product + count(\Auth::user()->unreadNotifications) + $alert_expired_product !!}</span>
                       </a>
                       <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default notifications" user="menu">
                           <li class="notifications">
@@ -902,56 +902,56 @@
                       </ul>
                 </li>
                 @endif
-                <li class="nav-item">
-                      <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item"><i class="dripicons-web"></i> <span>{{__('file.language')}}</span> <i class="fa fa-angle-down"></i></a>
-                      <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">
-                          <li>
-                            <a href="{{ url('language_switch/en') }}" class="btn btn-link"> English</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/es') }}" class="btn btn-link"> Español</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/ar') }}" class="btn btn-link"> عربى</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/pt_BR') }}" class="btn btn-link"> Portuguese</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/fr') }}" class="btn btn-link"> Français</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/de') }}" class="btn btn-link"> Deutsche</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/id') }}" class="btn btn-link"> Malay</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/hi') }}" class="btn btn-link"> हिंदी</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/vi') }}" class="btn btn-link"> Tiếng Việt</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/ru') }}" class="btn btn-link"> русский</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/tr') }}" class="btn btn-link"> Türk</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/it') }}" class="btn btn-link"> Italiano</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/nl') }}" class="btn btn-link"> Nederlands</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('language_switch/lao') }}" class="btn btn-link"> Lao</a>
-                          </li>
-                      </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="dropdown-item" href="{{ url('read_me') }}" target="_blank"><i class="dripicons-information"></i> {{trans('file.Help')}}</a>
-                </li>
+{{--                <li class="nav-item">--}}
+{{--                      <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item"><i class="dripicons-web"></i> <span>{{__('file.language')}}</span> <i class="fa fa-angle-down"></i></a>--}}
+{{--                      <ul class="dropdown-menu edit-options dropdown-menu-right dropdown-default" user="menu">--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/en') }}" class="btn btn-link"> English</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/es') }}" class="btn btn-link"> Español</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/ar') }}" class="btn btn-link"> عربى</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/pt_BR') }}" class="btn btn-link"> Portuguese</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/fr') }}" class="btn btn-link"> Français</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/de') }}" class="btn btn-link"> Deutsche</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/id') }}" class="btn btn-link"> Malay</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/hi') }}" class="btn btn-link"> हिंदी</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/vi') }}" class="btn btn-link"> Tiếng Việt</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/ru') }}" class="btn btn-link"> русский</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/tr') }}" class="btn btn-link"> Türk</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/it') }}" class="btn btn-link"> Italiano</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/nl') }}" class="btn btn-link"> Nederlands</a>--}}
+{{--                          </li>--}}
+{{--                          <li>--}}
+{{--                            <a href="{{ url('language_switch/lao') }}" class="btn btn-link"> Lao</a>--}}
+{{--                          </li>--}}
+{{--                      </ul>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="dropdown-item" href="{{ url('read_me') }}" target="_blank"><i class="dripicons-information"></i> {{trans('file.Help')}}</a>--}}
+{{--                </li>--}}
                 <li class="nav-item">
                   <a rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-item"><i class="dripicons-user"></i> <span>{{ucfirst(Auth::user()->name)}}</span> <i class="fa fa-angle-down"></i>
                   </a>
