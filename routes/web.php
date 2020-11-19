@@ -67,6 +67,7 @@ Route::group(['middleware' => ['auth', 'active']], function() {
 	Route::get('products/saleunit/{id}', 'ProductController@saleUnit');
 	Route::get('products/getdata/{id}', 'ProductController@getData');
 	Route::get('products/product_warehouse/{id}', 'ProductController@productWarehouseData');
+	Route::get('products/product_supplier/{id}', 'ProductController@productSupplierData');
 	Route::post('importproduct', 'ProductController@importProduct')->name('product.import');
 	Route::post('exportproduct', 'ProductController@exportProduct')->name('product.export');
 	Route::get('products/print_barcode','ProductController@printBarcode')->name('product.printBarcode');

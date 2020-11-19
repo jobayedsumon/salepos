@@ -22,31 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Notification added">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SliderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_17_154231_create_sliders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115216.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115306.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117115446.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117121412.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/category/20201117121447.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/160559389338081GsS1XFEZL._AC_SX522_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605593989936dairy2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594066064products_2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594130919snacksofourlives.0.0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605594186770snacksofourlives.0.0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605598066652VUFNKV7ORECPWC3S6TSUM6M7WM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/slider/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/GzL3OEZQ18zdhEtFVZ3GV8xJfncbzGQtr8qn004O" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Pos Stable, Started E-com work">
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/iZ3WaFluGYjSdFqF7gYKIVMa1z9ysVoG77Ohpgbh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adjustment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adjustment/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/purchase/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/purchase/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Dy7gqR4EWLiYZjrgiaymOf9Wunfsm3aMs4raacGL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/GzL3OEZQ18zdhEtFVZ3GV8xJfncbzGQtr8qn004O" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +234,8 @@
       <workItem from="1605507355756" duration="8214000" />
       <workItem from="1605590183225" duration="1911000" />
       <workItem from="1605606023532" duration="1932000" />
-      <workItem from="1605616259355" duration="22000" />
+      <workItem from="1605616259355" duration="202000" />
+      <workItem from="1605772794945" duration="6103000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -267,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605528709335</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pos Stable, Started E-com work">
+      <created>1605616326378</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605616326378</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +280,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Expiry date added" />
     <MESSAGE value="Notification added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notification added" />
+    <MESSAGE value="Pos Stable, Started E-com work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pos Stable, Started E-com work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
@@ -304,10 +296,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605512810007" />
-    <state x="320" y="183" key="Vcs.Push.Dialog.v2" timestamp="1605528713141">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="0" y="47" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1605616552166">
+      <screen x="0" y="25" width="1440" height="809" />
     </state>
-    <state x="320" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605528713141" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605616366592" />
+    <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
     <state x="420" y="189" width="600" height="522" key="find.popup" timestamp="1605519993610">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -316,10 +309,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605513028871" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605610089931">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605779227833">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605610089931" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605779227833" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
 </project>

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\ProductPurchase;
+use App\Purchase;
 use Illuminate\Http\Request;
 use Keygen;
 use App\Brand;
@@ -485,6 +487,14 @@ class ProductController extends Controller
         $product_warehouse = [$warehouse, $qty];
         $product_variant_warehouse = [$warehouse_name, $variant_name, $variant_qty];
         return ['product_warehouse' => $product_warehouse, 'product_variant_warehouse' => $product_variant_warehouse];
+    }
+
+    public function productSupplierData($id)
+    {
+        $purchase_ids = ProductPurchase::where('product_id', $id)->pluck('purchase_id');
+        $product_purchase = Purchase::with('supplier')->find($purchase_ids);
+
+        return ['product_purchase' => $product_purchase];
     }
 
     public function printBarcode()

@@ -107,6 +107,15 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="col-md-7 mt-2" id="product-supplier-section">
+                    <h5>{{trans('Suppliers of this product')}}</h5>
+                    <table class="table table-bordered table-hover product-supplier-list">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <h5 id="combo-header"></h5>
@@ -205,11 +214,39 @@
         $("table.item-list tbody").remove();
         $("table.product-warehouse-list thead").remove();
         $("table.product-warehouse-list tbody").remove();
+        $("table.product-supplier-list thead").remove();
+        $("table.product-supplier-list tbody").remove();
         $(".product-variant-warehouse-list thead").remove();
         $(".product-variant-warehouse-list tbody").remove();
         $("#product-warehouse-section").addClass('d-none');
+        // $("#product-supplier-section").addClass('d-none');
         $("#product-variant-warehouse-section").addClass('d-none');
         if(product[0] == 'combo') {
+            $.get('products/product_supplier/' + product[12], function(data) {
+                if(data.product_purchase.length != 0) {
+                    purchase = data.product_purchase;
+                    var newHead = $("<thead>");
+                    var newBody = $("<tbody>");
+                    var newRow = $("<tr>");
+                    newRow.append('<th>{{trans("Supplier")}}</th><th>{{trans("Quantity")}}</th><th>{{trans("Cost")}}</th><th>{{trans("Average")}}</th>');
+                    newHead.append(newRow);
+                    $("table.product-supplier-list").append(newHead);
+                    $("table.product-supplier-list").append(newBody);
+                    $.each(purchase, function(index){
+                        var newRow = $("<tr>");
+                        var cols = '';
+                        cols += '<td>' + purchase[index].supplier.name + '</td>';
+                        cols += '<td>' + purchase[index].total_qty + '</td>';
+                        cols += '<td>' + purchase[index].total_cost + '</td>';
+                        cols += '<td>' + purchase[index].total_cost / purchase[index].total_qty + '</td>';
+
+                        newRow.append(cols);
+                        newBody.append(newRow);
+                        $("table.product-supplier-list").append(newHead);
+                        $("table.product-supplier-list").append(newBody);
+                    });
+                }
+            });
             $("#combo-header").text('{{trans("file.Combo Products")}}');
             product_list = product[13].split(",");
             qty_list = product[14].split(",");
@@ -239,6 +276,31 @@
             $("table.item-list").append(newBody);
         }
         else if(product[0] == 'standard') {
+            $.get('products/product_supplier/' + product[12], function(data) {
+                if(data.product_purchase.length != 0) {
+                    purchase = data.product_purchase;
+                    var newHead = $("<thead>");
+                    var newBody = $("<tbody>");
+                    var newRow = $("<tr>");
+                    newRow.append('<th>{{trans("Supplier")}}</th><th>{{trans("Quantity")}}</th><th>{{trans("Cost")}}</th><th>{{trans("Average")}}</th>');
+                    newHead.append(newRow);
+                    $("table.product-supplier-list").append(newHead);
+                    $("table.product-supplier-list").append(newBody);
+                    $.each(purchase, function(index){
+                        var newRow = $("<tr>");
+                        var cols = '';
+                        cols += '<td>' + purchase[index].supplier.name + '</td>';
+                        cols += '<td>' + purchase[index].total_qty + '</td>';
+                        cols += '<td>' + purchase[index].total_cost + '</td>';
+                        cols += '<td>' + purchase[index].total_cost / purchase[index].total_qty + '</td>';
+
+                        newRow.append(cols);
+                        newBody.append(newRow);
+                        $("table.product-supplier-list").append(newHead);
+                        $("table.product-supplier-list").append(newBody);
+                    });
+                }
+            });
             $.get('products/product_warehouse/' + product[12], function(data) {
                 if(data.product_warehouse[0].length != 0) {
                     warehouse = data.product_warehouse[0];
