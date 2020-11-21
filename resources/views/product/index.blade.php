@@ -277,6 +277,7 @@
         }
         else if(product[0] == 'standard') {
             $.get('products/product_supplier/' + product[12], function(data) {
+                console.log(data);
                 if(data.product_purchase.length != 0) {
                     purchase = data.product_purchase;
                     var newHead = $("<thead>");
