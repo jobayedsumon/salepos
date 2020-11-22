@@ -35,6 +35,7 @@
                     <th>{{trans('file.Quantity')}}</th>
                     <th>{{trans('file.Unit')}}</th>
                     <th>{{trans('file.Price')}}</th>
+                    <th>{{trans('Average Cost')}}</th>
                     <th>{{trans('file.Expired Date')}}</th>
                     <th class="not-exported">{{trans('file.action')}}</th>
                 </tr>
@@ -173,6 +174,7 @@
 
     $(document).on("click", ".view", function(){
         var product = $(this).parent().parent().parent().parent().parent().data('product');
+        console.log(product);
         var imagedata = $(this).parent().parent().parent().parent().parent().data('imagedata');
         productDetails(product, imagedata);
     });
@@ -190,7 +192,7 @@
         product[11] = product[11].replace(/@/g, '"');
         htmltext = slidertext = '';
 
-        htmltext = '<p><strong>{{trans("file.Type")}}: </strong>'+product[0]+'</p><p><strong>{{trans("file.name")}}: </strong>'+product[1]+'</p><p><strong>{{trans("file.Code")}}: </strong>'+product[2]+ '</p><p><strong>{{trans("file.Brand")}}: </strong>'+product[3]+'</p><p><strong>{{trans("file.category")}}: </strong>'+product[4]+'</p><p><strong>{{trans("file.Quantity")}}: </strong>'+product[16]+'</p><p><strong>{{trans("file.Unit")}}: </strong>'+product[5]+'</p><p><strong>{{trans("file.Cost")}}: </strong>'+product[6]+'</p><p><strong>{{trans("file.Price")}}: </strong>'+product[7]+'</p><p><strong>{{trans("file.Tax")}}: </strong>'+product[8]+'</p><p><strong>{{trans("file.Tax Method")}} : </strong>'+product[9]+'</p><p><strong>{{trans("file.Alert Quantity")}} : </strong>'+product[10]+'</p><p><strong>{{trans("file.Product Details")}}: </strong></p>'+product[11];
+        htmltext = '<p><strong>{{trans("file.Type")}}: </strong>'+product[0]+'</p><p><strong>{{trans("file.name")}}: </strong>'+product[1]+'</p><p><strong>{{trans("file.Code")}}: </strong>'+product[2]+ '</p><p><strong>{{trans("file.Brand")}}: </strong>'+product[3]+'</p><p><strong>{{trans("file.category")}}: </strong>'+product[4]+'</p><p><strong>{{trans("file.Quantity")}}: </strong>'+product[16]+'</p><p><strong>{{trans("file.Unit")}}: </strong>'+product[5]+'</p><p><strong>{{trans("file.Cost")}}: </strong>'+product[6]+'</p><p><strong>{{trans("file.Price")}}: </strong>'+product[7]+'</p><p><strong>{{trans("Average Cost")}}: </strong>'+product[10]+'</p><p><strong>{{trans("file.Tax")}}: </strong>'+product[8]+'</p><p><strong>{{trans("file.Tax Method")}} : </strong>'+product[9]+'</p><p><strong>{{trans("file.Alert Quantity")}} : </strong>'+product[10]+'</p><p><strong>{{trans("file.Product Details")}}: </strong></p>'+product[11];
 
         if(product[17]) {
             var product_image = product[17].split(",");
@@ -374,6 +376,7 @@
                 type:"post",
 
             },
+
             "createdRow": function( row, data, dataIndex ) {
                 $(row).addClass('product-link');
                 $(row).attr('data-product', data['product']);
@@ -389,6 +392,7 @@
                 {"data": "qty"},
                 {"data": "unit"},
                 {"data": "price"},
+                {"data": "average_cost"},
                 {"data": "expiry_date"},
                 {"data": "options"},
             ],

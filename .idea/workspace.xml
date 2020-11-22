@@ -22,63 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Product Supplier added to product view">
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_21_143959_add_average_cost_column_to_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/public/images/product/1605955372290large_646c9d32-3b57-4a0a-8739-58980c8d470c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stock_count/20201121-041340.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stock_count/20201121-053843.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/85/5f/855f92484c8c414d36c1b25cb24876e30229cbbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/fbaXVf2OWebTSuSxFHTFGBryc6PcXr5OMH91UU0C" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/03caef186558ce129e3258ed07072818f74a98ca.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/0e049ff7ad1a1a5701c26f5c011a591bf8ac5578.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/13547e29b9a6dd0bb5b2f25d78bc655811476e8e.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/189767e60060f4361b5f2f5758f05e628dafd076.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/2467c7bdc19da345852cd5a8fcf0918d1ece8f19.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/2d9462458505c3ca68bc80bfd2d4e7dc1de05b8e.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/2ee6c506d97b5fb48fadb53dec267cb2e8a1bfd0.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/305e84c55996f909cf7d945d9e09862201e11acd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/406f925aadbd444c130ebd8c7090595ace0af4ef.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/4380e40b06811992ce0784c0ce209cd745c6a7a8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/464a726ecfde2f9101c19486c6eabead40a16825.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/4a31ae6e888016a152c23f2be227c27f6ed5b1dc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/546fb537ea3bc3de936aea17ae69c9ee6821f625.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/54d87203511b5334f1d2bf83af48c20e8c968d96.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/58227638a30095c111838461ac95ab7e2a7cbe88.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/5fa6d537d08cf38a558bc1ff979ae67b19f49c2d.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/6865bdb6af9adb19dfc3af1b90cbe4b85d14ef8c.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/6a29fe68d3090cd0457fc26eb03172eae80f35b5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/749adda1f4ef6cf02f39880026378853547be91a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/7502988eacc5dca7af276ec635003a725ed74394.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/759324865b57a6a86a629bfec335011df4886b3d.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/77f2c934ef5454c0423e2ac7705cfa89b3e8170f.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/7e169be5777c0ec8a8bcbfbf74508dd271927681.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/7f47783f02a4253585dbfa677e44622f2dd94dea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/82ea21501fa3b86a6299994624a6f4d8050669e8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/9498fcb0edd4c034b5d72bc186bcdfde7292adac.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/9fa5b10e0f490e7fb8af691b420a577f7a4aa62a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/a1e7a4330a113dfa8b0e53c1de58b557f68bebba.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/a91425a200964abd8bde96e1b31267be09f2f204.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/ad6c5222a88e24da248373d415dfecd864bc5104.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/af33ea35ec5865b3565fc8ed0eb59eaf3d2cf218.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/b5911e088a0e9dc9534dc696f4d59c9bce0d8fe6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/c078f584329680de186baa351e44d1bac20a3b50.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/cdb443efb7ddbb9d7bead5de04ee707a8cd9686a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d392f88c5136321ab736280a2cdb9395ed1d098b.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d6544dfe087ab3c153da589c84adbc4d3f43fe96.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/d7df4ad7f98f5fc180ee9c323fc0f2a1cc027b0d.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e46576cf0ea7a58e75adaeb82d3f7b409e192715.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e4b428f54523ba8c30f9816155a18ad9df450f3b.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e639cfce1bae61e68b0fd895b8f27dee5e68d3c2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/e81f19c8c763642f73ce3ad597102694f3fe5131.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/ed209a35bfb3918297d7a63ead6eea66466c40e6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/f084bcf2f0d662a00eb70c2194f639b883225fd2.php" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Working on showing average price in pos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PurchaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PurchaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/iZ3WaFluGYjSdFqF7gYKIVMa1z9ysVoG77Ohpgbh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/fbaXVf2OWebTSuSxFHTFGBryc6PcXr5OMH91UU0C" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +236,10 @@
       <workItem from="1605616259355" duration="202000" />
       <workItem from="1605772794945" duration="6170000" />
       <workItem from="1605940840261" duration="51000" />
-      <workItem from="1605941038224" duration="4133000" />
+      <workItem from="1605941038224" duration="4208000" />
+      <workItem from="1606020801220" duration="189000" />
+      <workItem from="1606022783438" duration="4504000" />
+      <workItem from="1606042748068" duration="3437000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -316,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605787747289</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Average cost calculated">
+      <created>1605959729623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605959729624</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +300,9 @@
     <MESSAGE value="Notification added" />
     <MESSAGE value="Pos Stable, Started E-com work" />
     <MESSAGE value="Product Supplier added to product view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product Supplier added to product view" />
+    <MESSAGE value="Average cost calculated" />
+    <MESSAGE value="Working on showing average price in pos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on showing average price in pos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
@@ -355,23 +317,23 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605512810007" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1605787755051">
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1605959733502">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605787755051" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605959733502" />
     <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
-    <state x="420" y="189" width="600" height="522" key="find.popup" timestamp="1605519993610">
+    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606027007429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="189" width="600" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605519993610" />
+    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606027007429" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1605513028871">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605513028871" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605959502293">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606043102876">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605959502293" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606043102876" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
 </project>

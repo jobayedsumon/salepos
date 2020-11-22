@@ -51,7 +51,8 @@ class ProductController extends Controller
             6 => 'qty',
             7 => 'unit_id',
             8 => 'price',
-            9 => 'expiry_date'
+            9 => 'average_cost',
+            10 => 'expiry_date'
         );
 
         $totalData = Product::where('is_active', true)->count();
@@ -148,6 +149,7 @@ class ProductController extends Controller
 
                 $nestedData['price'] = $product->price;
                 $nestedData['expiry_date'] = $product->expiry_date;
+                $nestedData['average_cost'] = $product->average_cost;
                 $nestedData['options'] = '<div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.trans("file.action").'
                               <span class="caret"></span>

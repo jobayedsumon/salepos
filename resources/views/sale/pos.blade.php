@@ -2519,6 +2519,7 @@ function productSearch(data) {
             data: data
         },
         success: function(data) {
+            console.log(data);
             var flag = 1;
             $(".product-code").each(function(i) {
                 if ($(this).val() == data[1]) {
@@ -2557,6 +2558,7 @@ function addNewProduct(data){
     cols += '<input type="hidden" class="net_unit_price" name="net_unit_price[]" />';
     cols += '<input type="hidden" class="discount-value" name="discount[]" />';
     cols += '<input type="hidden" class="tax-rate" name="tax_rate[]" value="' + data[3] + '"/>';
+    cols += '<input type="hidden" class="" name="average_price[]" value="' + data[11] + '"/>';
     cols += '<input type="hidden" class="tax-value" name="tax[]" />';
     cols += '<input type="hidden" class="subtotal-value" name="subtotal[]" />';
 
@@ -2582,6 +2584,7 @@ function addNewProduct(data){
 
 function edit(){
     var row_product_name_code = $('table.order-list tbody tr:nth-child(' + (rowindex + 1) + ')').find('td:nth-child(1)').text();
+
     $('#modal_header').text(row_product_name_code);
 
     var qty = $('table.order-list tbody tr:nth-child(' + (rowindex + 1) + ')').find('.qty').val();
