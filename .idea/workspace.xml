@@ -22,9 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Working on showing average price in pos">
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Average price shown">
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/85/5f/855f92484c8c414d36c1b25cb24876e30229cbbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/546fb537ea3bc3de936aea17ae69c9ee6821f625.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/6865bdb6af9adb19dfc3af1b90cbe4b85d14ef8c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/6a29fe68d3090cd0457fc26eb03172eae80f35b5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/749adda1f4ef6cf02f39880026378853547be91a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/7e169be5777c0ec8a8bcbfbf74508dd271927681.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/82ea21501fa3b86a6299994624a6f4d8050669e8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/af33ea35ec5865b3565fc8ed0eb59eaf3d2cf218.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/cdb443efb7ddbb9d7bead5de04ee707a8cd9686a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/d7df4ad7f98f5fc180ee9c323fc0f2a1cc027b0d.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e4b428f54523ba8c30f9816155a18ad9df450f3b.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e81f19c8c763642f73ce3ad597102694f3fe5131.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/f084bcf2f0d662a00eb70c2194f639b883225fd2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sale/pos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +252,9 @@
       <workItem from="1606022783438" duration="4504000" />
       <workItem from="1606042748068" duration="3623000" />
       <workItem from="1606109436092" duration="266000" />
-      <workItem from="1606128141645" duration="3715000" />
+      <workItem from="1606128141645" duration="3774000" />
+      <workItem from="1606193666959" duration="428000" />
+      <workItem from="1606544825043" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -281,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606046510922</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Average price shown">
+      <created>1606134124225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606134124225</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +331,8 @@
     <MESSAGE value="Product Supplier added to product view" />
     <MESSAGE value="Average cost calculated" />
     <MESSAGE value="Working on showing average price in pos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on showing average price in pos" />
+    <MESSAGE value="Average price shown" />
+    <option name="LAST_COMMIT_MESSAGE" value="Average price shown" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
@@ -318,27 +343,27 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="466" y="366" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1605347886252" />
-    <state x="229" y="89" key="SettingsEditor" timestamp="1605512810007">
+    <state x="229" y="89" key="SettingsEditor" timestamp="1606546932882">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605512810007" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606046516267">
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606546932882" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606134131275">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606046516267" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606134131275" />
     <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
-    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606131766997">
+    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606546724186">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606131766997" />
+    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606546724186" />
     <state x="385" y="210" key="run.anything.popup" timestamp="1605513028871">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1605513028871" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606132225473">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606544893216">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606132225473" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606544893216" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
   <component name="XDebuggerManager">

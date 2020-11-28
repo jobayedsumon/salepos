@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-md-7 mt-2" id="product-supplier-section">
                     <h5>{{trans('Suppliers of this product')}}</h5>
-                    <table class="table table-bordered table-hover product-supplier-list">
+                    <table id="productSupplier" class="table table-bordered table-hover product-supplier-list">
                         <thead>
                         </thead>
                         <tbody>
@@ -174,7 +174,6 @@
 
     $(document).on("click", ".view", function(){
         var product = $(this).parent().parent().parent().parent().parent().data('product');
-        console.log(product);
         var imagedata = $(this).parent().parent().parent().parent().parent().data('imagedata');
         productDetails(product, imagedata);
     });
@@ -187,6 +186,10 @@
           newWin.document.close();
           setTimeout(function(){newWin.close();},10);
     });
+
+
+
+
 
     function productDetails(product, imagedata) {
         product[11] = product[11].replace(/@/g, '"');
@@ -211,6 +214,8 @@
             }
         }
 
+
+
         $("#combo-header").text('');
         $("table.item-list thead").remove();
         $("table.item-list tbody").remove();
@@ -223,6 +228,44 @@
         $("#product-warehouse-section").addClass('d-none');
         // $("#product-supplier-section").addClass('d-none');
         $("#product-variant-warehouse-section").addClass('d-none');
+
+        function getMin()
+        {
+            var table = document.getElementById("productSupplier");
+            var minVal, minIndex;
+            for(var i = 1; i < table.rows.length; i++){
+                if(i === 1){
+                    minVal = table.rows[i].cells[3].innerHTML;
+                    minIndex = table.rows[i].rowIndex;
+                }else if(minVal > table.rows[i].cells[3].innerHTML){
+                    minVal = table.rows[i].cells[3].innerHTML;
+                    minIndex = table.rows[i].rowIndex;
+                }
+            }
+            table.rows[minIndex].style.background = "green";
+            table.rows[minIndex].style.color = "white";
+
+        }
+
+        // get max value
+        function getMax()
+        {
+            var table = document.getElementById("productSupplier");
+            var maxVal, maxIndex;
+            for(var i = 1; i < table.rows.length; i++){
+                if(i === 1){
+                    maxVal = table.rows[i].cells[2].innerHTML;
+                    maxIndex = table.rows[i].rowIndex;
+                }else if(maxVal < table.rows[i].cells[2].innerHTML){
+                    maxVal = table.rows[i].cells[2].innerHTML;
+                    maxIndex = table.rows[i].rowIndex;
+                }
+            }
+            table.rows[maxIndex].style.background = "red";
+            table.rows[maxIndex].style.color = "white";
+
+        }
+
         if(product[0] == 'combo') {
             $.get('products/product_supplier/' + product[12], function(data) {
                 if(data.product_purchase.length != 0) {
@@ -234,21 +277,36 @@
                     newHead.append(newRow);
                     $("table.product-supplier-list").append(newHead);
                     $("table.product-supplier-list").append(newBody);
+                    var max = 0;
+                    var min = 99999999999;
                     $.each(purchase, function(index){
-                        var newRow = $("<tr>");
+                        var average = purchase[index].total_cost / purchase[index].total_qty;
+                        // if (average >= max) {
+                        //     max = average;
+                        // }
+                        // if (average < min) {
+                        //     min = average;
+                        // }
+                        var newRow = $("<tr >");
                         var cols = '';
                         cols += '<td>' + purchase[index].supplier.name + '</td>';
                         cols += '<td>' + purchase[index].total_qty + '</td>';
                         cols += '<td>' + purchase[index].total_cost + '</td>';
-                        cols += '<td>' + purchase[index].total_cost / purchase[index].total_qty + '</td>';
+                        cols += '<td>' + average + '</td>';
 
                         newRow.append(cols);
                         newBody.append(newRow);
                         $("table.product-supplier-list").append(newHead);
                         $("table.product-supplier-list").append(newBody);
                     });
+
+                    getMin();
+                    getMax();
+
                 }
             });
+
+
             $("#combo-header").text('{{trans("file.Combo Products")}}');
             product_list = product[13].split(",");
             qty_list = product[14].split(",");
@@ -279,7 +337,6 @@
         }
         else if(product[0] == 'standard') {
             $.get('products/product_supplier/' + product[12], function(data) {
-                console.log(data);
                 if(data.product_purchase.length != 0) {
                     purchase = data.product_purchase;
                     var newHead = $("<thead>");
@@ -302,6 +359,10 @@
                         $("table.product-supplier-list").append(newHead);
                         $("table.product-supplier-list").append(newBody);
                     });
+
+                    getMin();
+                    getMax();
+
                 }
             });
             $.get('products/product_warehouse/' + product[12], function(data) {
