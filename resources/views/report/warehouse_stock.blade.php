@@ -18,7 +18,7 @@
 						</select>
 						{{ Form::close() }}
 					</div>
-					
+
 					<div class="col-md-6 offset-md-3 mt-3 mb-3">
 						<div class="row">
 							<div class="col-md-6">
@@ -28,16 +28,16 @@
 							<div class="col-md-6">
 								<span>Total {{trans('file.Quantity')}}</span>
 								<h2><strong>{{number_format((float)$total_qty, 2, '.', '') }}</strong></h2>
-							</div>	
-						</div>		
+							</div>
+						</div>
 					</div>
-						
+
 					<div class="col-md-5 offset-md-3 mt-2">
 						<div class="pie-chart">
 							@php
 			                    if($general_setting->theme == 'default.css'){
 			            			$color = '#733686';
-			                        $color_rgba = 'rgba(115, 54, 134, 0.8)';
+			                        $color_rgba = 'rgba(255,215,0, 0.8)';
 			            		}
 			            		elseif($general_setting->theme == 'green.css'){
 			                        $color = '#2ecc71';

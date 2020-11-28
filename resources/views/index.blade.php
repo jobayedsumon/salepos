@@ -66,7 +66,7 @@
       width: 28px;
   }
   .purple-theme {
-      background-color: #7c5cc4;
+      background-color: #ffd700;
   }
   .green-theme {
       background-color: #1abc9c;
@@ -158,7 +158,7 @@
                   @php
                     if($general_setting->theme == 'default.css'){
                       $color = '#733686';
-                      $color_rgba = 'rgba(115, 54, 134, 0.8)';
+                      $color_rgba = 'rgba(255,215,0, 0.8)';
                     }
                     elseif($general_setting->theme == 'green.css'){
                         $color = '#2ecc71';

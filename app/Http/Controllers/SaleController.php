@@ -493,8 +493,8 @@ class SaleController extends Controller
             $lims_payment_data->user_id = Auth::id();
             if($cash_register_data)
                 $lims_payment_data->cash_register_id = $cash_register_data->id;
-            $lims_account_data = Account::where('is_default', true)->first();
-            $lims_payment_data->account_id = $lims_account_data->id;
+//            $lims_account_data = Account::where('is_default', true)->first();
+//            $lims_payment_data->account_id = $lims_account_data->id;
             $lims_payment_data->sale_id = $lims_sale_data->id;
             $data['payment_reference'] = 'spr-'.date("Ymd").'-'.date("his");
             $lims_payment_data->payment_reference = $data['payment_reference'];
