@@ -22,24 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Min Max Supplier marking done">
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/AG7TbYJG7iJyLm8gtzwVcVUDEji2PrhaUL7vwIw8" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Color Changed, Product import running">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_01_175449_add_slug_column_to_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/logo/MRIDHA INTERPRIS 3 LOGO-01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SaleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SettingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom-default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom-default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-datepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap-datepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/daterange/css/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/daterange/css/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vendor/daterange/css/daterangepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendor/daterange/css/daterangepicker.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_me/assets/css/documenter_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/read_me/assets/css/documenter_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/best_seller.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/best_seller.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/report/warehouse_stock.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/report/warehouse_stock.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sale/invoice.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sale/invoice.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/setting/general_setting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/setting/general_setting.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/AG7TbYJG7iJyLm8gtzwVcVUDEji2PrhaUL7vwIw8" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +244,9 @@
       <workItem from="1606109436092" duration="266000" />
       <workItem from="1606128141645" duration="3774000" />
       <workItem from="1606193666959" duration="428000" />
-      <workItem from="1606544825043" duration="5864000" />
+      <workItem from="1606544825043" duration="6050000" />
+      <workItem from="1606819442317" duration="2147000" />
+      <workItem from="1606843923182" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -312,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606549237876</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Color Changed, Product import running">
+      <created>1606564003714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606564003714</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +339,8 @@
     <MESSAGE value="Working on showing average price in pos" />
     <MESSAGE value="Average price shown" />
     <MESSAGE value="Min Max Supplier marking done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Min Max Supplier marking done" />
+    <MESSAGE value="Color Changed, Product import running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color Changed, Product import running" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
@@ -351,14 +351,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="466" y="366" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1605347886252" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1606844506788">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1606844506788" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1606546932882">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606546932882" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606549241594">
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606564008137">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606549241594" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606564008137" />
     <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
     <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606562011445">
       <screen x="0" y="0" width="1440" height="900" />
@@ -368,10 +372,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1606556214470" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606561702041">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606844394078">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606561702041" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606844394078" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
   <component name="XDebuggerManager">

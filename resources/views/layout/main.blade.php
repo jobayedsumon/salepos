@@ -370,23 +370,23 @@
 
               ?>
               @if($index_permission_active || $balance_sheet_permission_active || $account_statement_permission_active)
-{{--              <li class=""><a href="#account" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-briefcase"></i><span>{{trans('file.Accounting')}}</span></a>--}}
-{{--                <ul id="account" class="collapse list-unstyled ">--}}
-{{--                  @if($index_permission_active)--}}
-{{--                  <li id="account-list-menu"><a href="{{route('accounts.index')}}">{{trans('file.Account List')}}</a></li>--}}
-{{--                  <li><a id="add-account" href="">{{trans('file.Add Account')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($money_transfer_permission_active)--}}
-{{--                  <li id="money-transfer-menu"><a href="{{route('money-transfers.index')}}">{{trans('file.Money Transfer')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($balance_sheet_permission_active)--}}
-{{--                  <li id="balance-sheet-menu"><a href="{{route('accounts.balancesheet')}}">{{trans('file.Balance Sheet')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($account_statement_permission_active)--}}
-{{--                  <li id="account-statement-menu"><a id="account-statement" href="">{{trans('file.Account Statement')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                </ul>--}}
-{{--              </li>--}}
+              <li class=""><a href="#account" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-briefcase"></i><span>{{trans('file.Accounting')}}</span></a>
+                <ul id="account" class="collapse list-unstyled ">
+                  @if($index_permission_active)
+                  <li id="account-list-menu"><a href="{{route('accounts.index')}}">{{trans('file.Account List')}}</a></li>
+                  <li><a id="add-account" href="">{{trans('file.Add Account')}}</a></li>
+                  @endif
+                  @if($money_transfer_permission_active)
+                  <li id="money-transfer-menu"><a href="{{route('money-transfers.index')}}">{{trans('file.Money Transfer')}}</a></li>
+                  @endif
+                  @if($balance_sheet_permission_active)
+                  <li id="balance-sheet-menu"><a href="{{route('accounts.balancesheet')}}">{{trans('file.Balance Sheet')}}</a></li>
+                  @endif
+                  @if($account_statement_permission_active)
+                  <li id="account-statement-menu"><a id="account-statement" href="">{{trans('file.Account Statement')}}</a></li>
+                  @endif
+                </ul>
+              </li>
               @endif
               <?php
                 $department = DB::table('permissions')->where('name', 'department')->first();
@@ -411,23 +411,23 @@
                     ])->first();
               ?>
 
-{{--              <li class=""><a href="#hrm" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-user-group"></i><span>HRM</span></a>--}}
-{{--                <ul id="hrm" class="collapse list-unstyled ">--}}
-{{--                  @if($department_active)--}}
-{{--                  <li id="dept-menu"><a href="{{route('departments.index')}}">{{trans('file.Department')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($index_employee_active)--}}
-{{--                  <li id="employee-menu"><a href="{{route('employees.index')}}">{{trans('file.Employee')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($attendance_active)--}}
-{{--                  <li id="attendance-menu"><a href="{{route('attendance.index')}}">{{trans('file.Attendance')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  @if($payroll_active)--}}
-{{--                  <li id="payroll-menu"><a href="{{route('payroll.index')}}">{{trans('file.Payroll')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                  <li id="holiday-menu"><a href="{{route('holidays.index')}}">{{trans('file.Holiday')}}</a></li>--}}
-{{--                </ul>--}}
-{{--              </li>--}}
+              <li class=""><a href="#hrm" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-user-group"></i><span>HRM</span></a>
+                <ul id="hrm" class="collapse list-unstyled ">
+                  @if($department_active)
+                  <li id="dept-menu"><a href="{{route('departments.index')}}">{{trans('file.Department')}}</a></li>
+                  @endif
+                  @if($index_employee_active)
+                  <li id="employee-menu"><a href="{{route('employees.index')}}">{{trans('file.Employee')}}</a></li>
+                  @endif
+                  @if($attendance_active)
+                  <li id="attendance-menu"><a href="{{route('attendance.index')}}">{{trans('file.Attendance')}}</a></li>
+                  @endif
+                  @if($payroll_active)
+                  <li id="payroll-menu"><a href="{{route('payroll.index')}}">{{trans('file.Payroll')}}</a></li>
+                  @endif
+                  <li id="holiday-menu"><a href="{{route('holidays.index')}}">{{trans('file.Holiday')}}</a></li>
+                </ul>
+              </li>
 
               <?php
                   $user_index_permission_active = DB::table('permissions')
