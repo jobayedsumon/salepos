@@ -22,9 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Accounting, HRM added">
-      <change afterPath="$PROJECT_DIR$/.cpanel.yml" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Accounting, HRM added, .cpanel.yml added">
+      <change afterPath="$PROJECT_DIR$/Archive.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/85/5f/855f92484c8c414d36c1b25cb24876e30229cbbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/6865bdb6af9adb19dfc3af1b90cbe4b85d14ef8c.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/6a29fe68d3090cd0457fc26eb03172eae80f35b5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/82ea21501fa3b86a6299994624a6f4d8050669e8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/af33ea35ec5865b3565fc8ed0eb59eaf3d2cf218.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/e4b428f54523ba8c30f9816155a18ad9df450f3b.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +250,7 @@
       <workItem from="1606193666959" duration="428000" />
       <workItem from="1606544825043" duration="6050000" />
       <workItem from="1606819442317" duration="2147000" />
-      <workItem from="1606843923182" duration="668000" />
+      <workItem from="1606843923182" duration="2361000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -312,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606844561786</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Accounting, HRM added, .cpanel.yml added">
+      <created>1606847230140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606847230140</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +359,8 @@
     <MESSAGE value="Min Max Supplier marking done" />
     <MESSAGE value="Color Changed, Product import running" />
     <MESSAGE value="Accounting, HRM added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Accounting, HRM added" />
+    <MESSAGE value="Accounting, HRM added, .cpanel.yml added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Accounting, HRM added, .cpanel.yml added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
@@ -361,10 +379,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606546932882" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606844568910">
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606847234035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606844568910" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606847234035" />
     <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
     <state x="524" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606847113575">
       <screen x="0" y="0" width="1440" height="900" />
@@ -378,10 +396,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1606556214470" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606844394078">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606853129158">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606844394078" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606853129158" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
   <component name="XDebuggerManager">
