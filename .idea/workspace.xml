@@ -25,7 +25,9 @@
     <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="All links fixed">
       <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +247,7 @@
       <workItem from="1606544825043" duration="6050000" />
       <workItem from="1606819442317" duration="2147000" />
       <workItem from="1606843923182" duration="2801000" />
-      <workItem from="1606971893581" duration="3538000" />
+      <workItem from="1606971893581" duration="4898000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -352,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606974499089</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="All links fixed">
+      <created>1606976441348</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606976441348</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,10 +416,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606975861222" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606974501693">
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606977800031">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606974501693" />
+    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606977800031" />
     <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
     <state x="593" y="298" key="cloudConfig.SelfSettingsDialog" timestamp="1606973355315">
       <screen x="0" y="0" width="1440" height="900" />
@@ -420,18 +429,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="524" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1606847113575" />
-    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606973212567">
+    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606977759602">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606973212567" />
+    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606977759602" />
     <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1606556214470">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1606556214470" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606972868626">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606977252560">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606972868626" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606977252560" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
   <component name="XDebuggerManager">
