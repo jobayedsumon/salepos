@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" href="{{url('/public/logo', $general_setting->site_logo)}}" />
+    <link rel="icon" type="image/png" href="{{url('/logo', $general_setting->site_logo)}}" />
     <title>{{$general_setting->site_title}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="manifest" href="{{url('public/manifest.json')}}">
+    <link rel="manifest" href="{{url('manifest.json')}}">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="<?php echo asset('vendor/bootstrap/css/bootstrap.min.css') ?>" type="text/css">
     <link rel="stylesheet" href="<?php echo asset('vendor/bootstrap-toggle/css/bootstrap-toggle.min.css') ?>" type="text/css">
@@ -858,7 +858,7 @@
           <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <a id="toggle-btn" href="#" class="menu-btn"><i class="fa fa-bars"> </i></a>
-              <span class="brand-big">@if($general_setting->site_logo)<img src="{{asset('/public/logo/'. $general_setting->site_logo)}}" width="50">&nbsp;&nbsp;@endif<a href="{{url('/')}}"><h1 class="d-inline text-golden">{{$general_setting->site_title}}</h1></a></span>
+              <span class="brand-big">@if($general_setting->site_logo)<img src="{{asset('/logo/'. $general_setting->site_logo)}}" width="50">&nbsp;&nbsp;@endif<a href="{{url('/')}}"><h1 class="d-inline text-golden">{{$general_setting->site_title}}</h1></a></span>
 
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <?php
