@@ -23,11 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="All links fixed">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SlideController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/160751446708291pLL4R8oNL._SX522_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/160751458207891pLL4R8oNL._SX522_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/1607514635469download.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/160751469037651VVBZitUXL._AC_SY400_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209045357.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209050256.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209050317.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054327.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054355.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054556.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/sliders.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/0U2TQvIphOiuMWtRRACmiZ1bGHjwUaSgpZalr9w2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +206,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -247,7 +261,11 @@
       <workItem from="1606544825043" duration="6050000" />
       <workItem from="1606819442317" duration="2147000" />
       <workItem from="1606843923182" duration="2801000" />
-      <workItem from="1606971893581" duration="4898000" />
+      <workItem from="1606971893581" duration="5034000" />
+      <workItem from="1607157753635" duration="185000" />
+      <workItem from="1607237414448" duration="367000" />
+      <workItem from="1607272508799" duration="403000" />
+      <workItem from="1607498429378" duration="7508000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -361,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606976441348</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="All links fixed">
+      <created>1606979389041</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606979389041</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,54 +419,6 @@
     <MESSAGE value="Accounting, HRM added, .cpanel.yml added" />
     <MESSAGE value="All links fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="All links fixed" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="538" y="93" key="#Menus_and_Toolbars" timestamp="1606973368643">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="538" y="93" key="#Menus_and_Toolbars/0.0.1440.900@0.0.1440.900" timestamp="1606973368643" />
-    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605606321790">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605606321790" />
-    <state x="466" y="366" key="ComposerInitDialogKey" timestamp="1605347886252">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="466" y="366" key="ComposerInitDialogKey/0.0.1440.900@0.0.1440.900" timestamp="1605347886252" />
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1606844506788">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1606844506788" />
-    <state x="229" y="89" key="SettingsEditor" timestamp="1606975861222">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1606975861222" />
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2" timestamp="1606977800031">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="25" width="1440" height="807" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1606977800031" />
-    <state x="0" y="47" key="Vcs.Push.Dialog.v2/0.25.1440.809@0.25.1440.809" timestamp="1605616552166" />
-    <state x="593" y="298" key="cloudConfig.SelfSettingsDialog" timestamp="1606973355315">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="593" y="298" key="cloudConfig.SelfSettingsDialog/0.0.1440.900@0.0.1440.900" timestamp="1606973355315" />
-    <state x="524" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606847113575">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="524" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1606847113575" />
-    <state x="420" y="189" width="600" height="580" key="find.popup" timestamp="1606977759602">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="420" y="189" width="600" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1606977759602" />
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1606556214470">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1606556214470" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1606977252560">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606977252560" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.807@0.25.1440.807" timestamp="1605348435098" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

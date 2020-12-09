@@ -848,6 +848,12 @@
                   @endif
                 </ul>
               </li>
+
+              <li><a href="#website" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-gear"></i><span>{{trans('Website')}}</span></a>
+                <ul id="website" class="collapse list-unstyled ">
+                  <li><a href="/sliders">Sliders</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>

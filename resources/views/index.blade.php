@@ -239,7 +239,7 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @foreach($recent_sale as $sale)
+                            @forelse($recent_sale as $sale)
                             <?php $customer = DB::table('customers')->find($sale->customer_id); ?>
                             <tr>
                               <td>{{ date($general_setting->date_format, strtotime($sale->created_at->toDateString())) }}</td>
@@ -254,7 +254,8 @@
                               @endif
                               <td>{{$sale->grand_total}}</td>
                             </tr>
-                            @endforeach
+                            @empty
+                            @endforelse
                           </tbody>
                         </table>
                       </div>

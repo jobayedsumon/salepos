@@ -288,5 +288,11 @@ Route::group(['middleware' => ['auth', 'active']], function() {
 
 	Route::get('/home', 'HomeController@index')->name('home');
 	Route::get('my-transactions/{year}/{month}', 'HomeController@myTransaction');
+
+	//CUSTOM WEBSITE SETTING ROUTES
+    Route::get('sliders', 'SlideController@index')->name('sliders');
+    Route::post('sliders', 'SlideController@store')->name('sliders');
+    Route::get('sliders/{id}/delete', ['as' => 'sliders.delete', 'uses' => 'SlideController@destroy']);
+
 });
 
