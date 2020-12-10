@@ -22,27 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="All links fixed">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SlideController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product/160751446708291pLL4R8oNL._SX522_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product/160751458207891pLL4R8oNL._SX522_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product/1607514635469download.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product/160751469037651VVBZitUXL._AC_SY400_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209045357.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209050256.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209050317.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054327.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054355.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider/20201209054556.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/website/sliders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/0U2TQvIphOiuMWtRRACmiZ1bGHjwUaSgpZalr9w2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ItRdL7CdHS65Hi20Jhw4GKDfJcNTFUGBo6eUZOnf" beforeDir="false" />
-    </list>
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Slider added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -265,7 +245,7 @@
       <workItem from="1607157753635" duration="185000" />
       <workItem from="1607237414448" duration="367000" />
       <workItem from="1607272508799" duration="403000" />
-      <workItem from="1607498429378" duration="7508000" />
+      <workItem from="1607498429378" duration="7576000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -386,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606979389041</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Slider added">
+      <created>1607515822224</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607515822224</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +405,8 @@
     <MESSAGE value="Accounting, HRM added" />
     <MESSAGE value="Accounting, HRM added, .cpanel.yml added" />
     <MESSAGE value="All links fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="All links fixed" />
+    <MESSAGE value="Slider added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slider added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
