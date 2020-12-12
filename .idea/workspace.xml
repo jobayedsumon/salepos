@@ -22,7 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Slider added" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="frontend support">
+      <change afterPath="$PROJECT_DIR$/public/images/product/160776054153091TKOKJe2zL._SL1500_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/1607761109368large_e041560f-0a35-4229-9302-8dd1feedf047.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/1607762613052Dano-Mom-babui-300x300.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/1607762666154640x640.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/1607762716062vitalia-chocolate-corn-flakes-500-gm.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product/product-demo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,6 +254,8 @@
       <workItem from="1607237414448" duration="367000" />
       <workItem from="1607272508799" duration="403000" />
       <workItem from="1607498429378" duration="7576000" />
+      <workItem from="1607596218617" duration="401000" />
+      <workItem from="1607760397618" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -373,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607515822224</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="frontend support">
+      <created>1607596267373</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607596267373</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +423,8 @@
     <MESSAGE value="Accounting, HRM added, .cpanel.yml added" />
     <MESSAGE value="All links fixed" />
     <MESSAGE value="Slider added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slider added" />
+    <MESSAGE value="frontend support" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
