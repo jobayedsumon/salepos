@@ -294,5 +294,7 @@ Route::group(['middleware' => ['auth', 'active']], function() {
     Route::post('sliders', 'SlideController@store')->name('sliders');
     Route::get('sliders/{id}/delete', ['as' => 'sliders.delete', 'uses' => 'SlideController@destroy']);
 
+    Route::resource('deals', 'DealController', ['except' => ['show']]);
+
 });
 
