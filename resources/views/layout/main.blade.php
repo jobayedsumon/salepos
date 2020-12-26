@@ -853,6 +853,14 @@
                 <ul id="website" class="collapse list-unstyled ">
                   <li><a href="/sliders">Sliders</a></li>
                   <li><a href="/deals">Deals</a></li>
+                  <li><a href="/orders">Orders</a></li>
+                  <li><a href="/featured">Featured Products</a></li>
+                  <li><a href="#page-manager" aria-expanded="false" data-toggle="collapse">{{trans('Page Manager')}}</a>
+                    <ul id="page-manager" class="collapse list-unstyled">
+                        <li><a href="/customer-care">Customer Care</a></li>
+                        <li><a href="/policies">Policies</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
             </ul>

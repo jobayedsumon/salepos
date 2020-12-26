@@ -2,24 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\FeaturedProduct;
 use App\Product;
-use App\Deal ;
 use Illuminate\Http\Request;
 
-class DealController extends Controller
+class FeaturedController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     *
      */
     public function index()
     {
         //
-        $products = Product::orderBy('name')->get();
-        $deals = Deal::latest()->get();
+        $products = Product::latest()->get();
+        $featuredProducts = Product::where('featured', 1)->latest()->get();
 
-        return view('website.deals', compact('products', 'deals'));
+
+        return view('website.featured', compact( 'products', 'featuredProducts'));
     }
 
     /**
@@ -27,10 +28,9 @@ class DealController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($productId)
+    public function create()
     {
         //
-        return view('website.deals', compact('productId'));
     }
 
     /**
@@ -42,22 +42,13 @@ class DealController extends Controller
     public function store(Request $request)
     {
         //
-        Deal::create($request->all());
+        $product = Product::findOrFail($request->product_id);
 
-//        $product = Product::find($request->product_id);
-//
-//        if ($request->price) {
-//            $product->price = $request->price;
-//        } else if ($request->percentage) {
-//            $product->promotion = 1;
-//            $product->promotion_price = ceil($product->price * $request->percentage / 100);
-//            $product->starting_date = now();
-//            $product->last_date = $request->expire;
-//        }
-//
-//        $product->save();
+        $product->update([
+            'featured' => 1,
+        ]);
 
-        return redirect()->back();
+        return redirect(route('featured.index'));
     }
 
     /**
@@ -86,7 +77,7 @@ class DealController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param    $id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -97,15 +88,18 @@ class DealController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param Deal $deal
+     * @param  int  $id
      * @return \Illuminate\Http\Response
-     * @throws \Exception
      */
-    public function destroy(Deal $deal)
+    public function destroy($id)
     {
         //
-        $deal->delete();
+        $featuredProduct = Product::findOrFail($id);
 
-        return redirect(route('deals.index'));
+        $featuredProduct->update([
+            'featured' => 0
+        ]);
+
+        return redirect(route('featured.index'));
     }
 }

@@ -23,13 +23,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="frontend support">
-      <change afterPath="$PROJECT_DIR$/app/Deal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DealController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/website/deals.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FeaturedController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/OrderDetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image-optimizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/customer-care.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/featured.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/order-details.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/orders.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/about-us.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/contact-us.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/disclaimer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/privacy-policy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/returns-exchange.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/pages/terms-conditions.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/website/policies.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/salepropos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/salepropos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/packages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DealController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DealController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/custom-default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom-default.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/website/deals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/website/deals.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,6 +203,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/vendor/mike42/escpos-php" />
       <path value="$PROJECT_DIR$/vendor/rawilk/laravel-printing" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-image-optimizer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k8EGUvnh5HZJh6yHRDTrW6dh22" />
@@ -195,7 +221,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/website" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -261,7 +287,8 @@
       <workItem from="1607855182065" duration="50000" />
       <workItem from="1607855333995" duration="601000" />
       <workItem from="1607884509077" duration="33000" />
-      <workItem from="1607946147926" duration="13000" />
+      <workItem from="1607946147926" duration="117000" />
+      <workItem from="1608959499205" duration="11292000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -403,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607775209526</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Deals">
+      <created>1607946200201</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607946200201</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +471,8 @@
     <MESSAGE value="All links fixed" />
     <MESSAGE value="Slider added" />
     <MESSAGE value="frontend support" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend support" />
+    <MESSAGE value="Deals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -446,6 +481,11 @@
           <url>file://$PROJECT_DIR$/resources/views/sale/pos.blade.php</url>
           <line>1307</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/customer/index.blade.php</url>
+          <line>297</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

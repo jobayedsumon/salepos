@@ -693,9 +693,16 @@ nav.navbar .nav-item li.notifications a i{
 .dataTables_filter,
 .dataTables_length,
 .dt-buttons {
-	float: left;
+	float: right;
 	vertical-align: middle;
 	width: 30%;
+}
+
+.dataTables_length
+ {
+    float: left;
+    vertical-align: middle;
+    width: 30%;
 }
 
 .dt-buttons {

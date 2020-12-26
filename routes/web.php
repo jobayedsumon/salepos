@@ -17,7 +17,7 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/dashboard', 'HomeController@dashboard');
 });
 
-Route::group(['middleware' => ['auth', 'active']], function() {
+Route::group(['middleware' => ['auth', 'active', 'optimizeImages']], function() {
 
 	Route::get('/', 'HomeController@index');
 	Route::get('/dashboard-filter/{start_date}/{end_date}', 'HomeController@dashboardFilter');
@@ -295,6 +295,17 @@ Route::group(['middleware' => ['auth', 'active']], function() {
     Route::get('sliders/{id}/delete', ['as' => 'sliders.delete', 'uses' => 'SlideController@destroy']);
 
     Route::resource('deals', 'DealController', ['except' => ['show']]);
+
+    Route::get('orders', 'OrderController@index')->name('orders');
+    Route::get('orders/{orderId}', 'OrderController@details')->name('order-details');
+    Route::patch('orders/{orderId}', 'OrderController@order_update')->name('order-update');
+
+    Route::resource('featured', 'FeaturedController', ['except' => ['show']]);
+
+    Route::get('customer-care', 'PageController@customer_care')->name('customer-care');
+    Route::post('customer-care', 'PageController@customer_care_store')->name('customer-care');
+    Route::get('policies', 'PageController@policies')->name('policies');
+    Route::post('policies', 'PageController@policies_store')->name('policies');
 
 });
 
