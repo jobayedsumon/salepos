@@ -232,7 +232,7 @@
 {{--                  <li id="gift-card-menu"><a href="{{route('gift_cards.index')}}">{{trans('file.Gift Card List')}}</a> </li>--}}
                   @endif
                   @if($coupon_permission_active)
-{{--                  <li id="coupon-menu"><a href="{{route('coupons.index')}}">{{trans('file.Coupon List')}}</a> </li>--}}
+                  <li id="coupon-menu"><a href="{{route('coupons.index')}}">{{trans('file.Coupon List')}}</a> </li>
                   @endif
                   @if($delivery_permission_active)
 {{--                  <li id="delivery-menu"><a href="{{route('delivery.index')}}">{{trans('file.Delivery List')}}</a></li>--}}
@@ -249,10 +249,10 @@
                     ])->first();
               ?>
               @if($index_permission_active)
-{{--              <li><a href="#expense" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-wallet"></i><span>{{trans('file.Expense')}}</span></a>--}}
-{{--                <ul id="expense" class="collapse list-unstyled ">--}}
-{{--                  <li id="exp-cat-menu"><a href="{{route('expense_categories.index')}}">{{trans('file.Expense Category')}}</a></li>--}}
-{{--                  <li id="exp-list-menu"><a href="{{route('expenses.index')}}">{{trans('file.Expense List')}}</a></li>--}}
+              <li><a href="#expense" aria-expanded="false" data-toggle="collapse"> <i class="dripicons-wallet"></i><span>{{trans('file.Expense')}}</span></a>
+                <ul id="expense" class="collapse list-unstyled ">
+                  <li id="exp-cat-menu"><a href="{{route('expense_categories.index')}}">{{trans('file.Expense Category')}}</a></li>
+                  <li id="exp-list-menu"><a href="{{route('expenses.index')}}">{{trans('file.Expense List')}}</a></li>
                   <?php
                     $add_permission = DB::table('permissions')->where('name', 'expenses-add')->first();
                     $add_permission_active = DB::table('role_has_permissions')->where([
@@ -260,11 +260,11 @@
                         ['role_id', $role->id]
                     ])->first();
                   ?>
-{{--                  @if($add_permission_active)--}}
-{{--                  <li><a id="add-expense" href=""> {{trans('file.Add Expense')}}</a></li>--}}
-{{--                  @endif--}}
-{{--                </ul>--}}
-{{--              </li>--}}
+                  @if($add_permission_active)
+                  <li><a id="add-expense" href=""> {{trans('file.Add Expense')}}</a></li>
+                  @endif
+                </ul>
+              </li>
               @endif
               <?php
                 $index_permission = DB::table('permissions')->where('name', 'quotes-index')->first();
@@ -855,6 +855,7 @@
                   <li><a href="/deals">Deals</a></li>
                   <li><a href="/orders">Orders</a></li>
                   <li><a href="/featured">Featured Products</a></li>
+                  <li><a href="/testimonial">Testimonial</a></li>
                   <li><a href="#page-manager" aria-expanded="false" data-toggle="collapse">{{trans('Page Manager')}}</a>
                     <ul id="page-manager" class="collapse list-unstyled">
                         <li><a href="/customer-care">Customer Care</a></li>

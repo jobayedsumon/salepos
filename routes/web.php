@@ -307,5 +307,9 @@ Route::group(['middleware' => ['auth', 'active', 'optimizeImages']], function() 
     Route::get('policies', 'PageController@policies')->name('policies');
     Route::post('policies', 'PageController@policies_store')->name('policies');
 
+    Route::get('testimonial', 'TestimonialController@index')->name('testimonials');
+    Route::get('testimonial/approve/{id}', 'TestimonialController@approve')->name('testimonial-approve');
+    Route::get('testimonial/un-approve/{id}', 'TestimonialController@un_approve')->name('testimonial-un-approve');
+
 });
 
