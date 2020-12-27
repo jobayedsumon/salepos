@@ -22,15 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="frontend support">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Testimonial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/packages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/website/testimonials.blade.php" afterDir="false" />
+    <list default="true" id="7f43552d-952f-4671-a840-82a5d46fd7df" name="Default Changelist" comment="Testimonial added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.default.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +260,7 @@
       <workItem from="1607884509077" duration="33000" />
       <workItem from="1607946147926" duration="117000" />
       <workItem from="1608959499205" duration="11494000" />
-      <workItem from="1609048217371" duration="3282000" />
+      <workItem from="1609048217371" duration="3600000" />
     </task>
     <task id="LOCAL-00001" summary="Expiry date added">
       <created>1605443431241</created>
@@ -414,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607946200201</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Testimonial added">
+      <created>1609069903032</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609069903032</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +451,8 @@
     <MESSAGE value="Slider added" />
     <MESSAGE value="frontend support" />
     <MESSAGE value="Deals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deals" />
+    <MESSAGE value="Testimonial added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testimonial added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

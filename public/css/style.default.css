@@ -1020,7 +1020,7 @@ nav.navbar a.menu-btn i[class*='icon-'] {
 * ==========================================================
 */
 footer.main-footer {
-    position: absolute;
+    position: inherit;
     width: 100%;
     bottom: 0;
     padding: 15px 0;
